@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natures Nectar Smoothie Stand</title>
+    <link rel="stylesheet" href="./stylesheets/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="/imgs/NatureNectarFavicon.png" >
+</head>
+
+<body>
+    <nav class="navagation">
+        <div class="navLogo">
+            <h1>Natures Nectar</h1>
+        </div>
+        <ul>
+            <li onclick="openMenu()">Menu</li>
+            <li class="open" onclick="openOpen()">Open</li>
+            <li class="closed">Closed</li>
+        </ul>
+    </nav>
+    <div class="heroSection">
+        <div class="heroBackground">
+            <div class="heroBackgroundSide1" data-aos="fade-up" data-aos-delay="100" data-aos-duration="2000"></div>
+            <div class="heroBackgroundSide2" data-aos="fade-up" data-aos-delay="200" data-aos-duration="3000"></div>
+        </div>
+        <div class="heroCenter">
+            <div class="heroText">
+                <h1 data-aos="fade-up" data-aos-delay="200" data-aos-duration="3000">Natures Nectar</h1>
+                <h4 data-aos="fade-up" data-aos-delay="300" data-aos-duration="3000">Stand</h4>
+                <h6 data-aos="fade-up" data-aos-delay="400" data-aos-duration="3000">Est. 2024</h6>
+            </div>
+            <div class="heroImgScroller">
+                <div class="heroImgsScrollerImgs">
+                    <div class="heroImgScrollerImg">
+                        <img src="/imgs/smoothie.png" alt="" class="sliderImageSpin" id="Smoothie1" data-aos="fade-up" data-aos-delay="400" data-aos-duration="3000">
+                        <div class="imgSwapper">
+                            <div class="sliderActiveImg">
+                                <div class="imgSwapperImg">
+                                    <img src="imgs/smoothie.png" alt="" onclick="heroImage1()">
+                                </div>
+                            </div>
+                            <div class="imgSwapperImg">
+                                <img src="imgs/smoothie2.png" alt="" onclick="heroImage2()">
+                            </div>
+                            <div class="imgSwapperImg">
+                                <img src="imgs/extra1.png" alt="" onclick="heroImage3()">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="heroImgScrollerImg">
+                        <img src="/imgs/smoothie2.png" alt="" class="sliderImageSpin" id="Smoothie2">
+                        <div class="imgSwapper">
+                            <div class="imgSwapperImg">
+                                <img src="imgs/smoothie.png" alt="" onclick="heroImage1()">
+                            </div>
+                            <div class="sliderActiveImg">
+                                <div class="imgSwapperImg">
+                                    <img src="imgs/smoothie2.png" alt="" onclick="heroImage2()">
+                                </div>
+                            </div>
+                            <div class="imgSwapperImg">
+                                <img src="imgs/extra1.png" alt="" onclick="heroImage3()">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="heroImgScrollerImg">
+                        <img src="/imgs/extra1.png" alt="" class="sliderImageSpin" id="Extra1">
+                        <div class="imgSwapper">
+                            <div class="imgSwapperImg">
+                                <img src="imgs/smoothie.png" alt="" onclick="heroImage1()">
+                            </div>
+                            <div class="imgSwapperImg">
+                                <img src="imgs/smoothie2.png" alt="" onclick="heroImage2()">
+                            </div>
+                            <div class="sliderActiveImg">
+                                <div class="imgSwapperImg">
+                                    <img src="imgs/extra1.png" alt="" onclick="heroImage3()">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="PopupBackGround" onclick="closeMenu()"></div>
+    <div class="PopUpMenu">
+        <div class="MenuHeading">
+            <h1>Smoothies</h1>
+        </div>
+        <div class="menuItem">
+            <div class="menuItemDetails">
+                <h1>Smoothie</h1>
+                <p>Whats in the smoothie?</p>
+            </div>
+            <div class="menuItemPrice">
+                <h3>$5.35</h3>
+            </div>
+        </div>
+        <div class="menuItem">
+            <div class="menuItemDetails">
+                <h1>Smoothie</h1>
+                <p>Whats in the smoothie?</p>
+            </div>
+            <div class="menuItemPrice">
+                <h3>$5.35</h3>
+            </div>
+        </div>
+        <div class="menuItem">
+            <div class="menuItemDetails">
+                <h1>Smoothie</h1>
+                <p>Whats in the smoothie?</p>
+            </div>
+            <div class="menuItemPrice">
+                <h3>$5.35</h3>
+            </div>
+        </div>
+        <div class="menuItem">
+            <div class="menuItemDetails">
+                <h1>Smoothie</h1>
+                <p>Whats in the smoothie?</p>
+            </div>
+            <div class="menuItemPrice">
+                <h3>$5.35</h3>
+            </div>
+        </div>
+        <div class="menuItem">
+            <div class="menuItemDetails">
+                <h1>Smoothie</h1>
+                <p>Whats in the smoothie?</p>
+            </div>
+            <div class="menuItemPrice">
+                <h3>$5.35</h3>
+            </div>
+        </div>
+        <div class="menuItem">
+            <div class="menuItemDetails">
+                <h1>Smoothie</h1>
+                <p>Whats in the smoothie?</p>
+            </div>
+            <div class="menuItemPrice">
+                <h3>$5.35</h3>
+            </div>
+        </div>
+        <div class="MenuHeading">
+            <h1>Food</h1>
+        </div>
+        <div class="menuItem">
+            <div class="menuItemDetails">
+                <h1>Food</h1>
+                <p>Whats in the food?</p>
+            </div>
+            <div class="menuItemPrice">
+                <h3>$2.65</h3>
+            </div>
+        </div>
+        <div class="menuItem">
+            <div class="menuItemDetails">
+                <h1>Food</h1>
+                <p>Whats in the food?</p>
+            </div>
+            <div class="menuItemPrice">
+                <h3>$2.65</h3>
+            </div>
+        </div>
+        <div class="menuItem">
+            <div class="menuItemDetails">
+                <h1>Food</h1>
+                <p>Whats in the food?</p>
+            </div>
+            <div class="menuItemPrice">
+                <h3>$2.65</h3>
+            </div>
+        </div>
+        <div class="menuItem">
+            <div class="menuItemDetails">
+                <h1>Food</h1>
+                <p>Whats in the food?</p>
+            </div>
+            <div class="menuItemPrice">
+                <h3>$2.65</h3>
+            </div>
+        </div>
+        <div class="citingText">
+            <cite>&copy; Natures Nectar 2024 Menu</cite>
+        </div>
+    </div>
+    <div class="PopupBackGround wereOpenBackground" onclick="closeMenu()"></div>
+    <div class="wereOpen">
+        <h4>We Are</h4>
+        <h2 class="open">Open</h2>
+        <p>Visit us in Carriage Crossing in Leawood Kansas!</p>
+    </div>
+    <script src="javascript/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
